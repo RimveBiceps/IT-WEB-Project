@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>IT Sprendimai - Kontaktai</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class = "container">
+            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#Navbar">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <a class = "navbar-brand mr-auto" href = "index.html">IT Sprendimai</a>
+            <div class = "collapse navbar-collapse" id = "Navbar">
+                <ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "index.html"><span class = "fa fa-paper-plane fa-lg"></span> Pagrindinis</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "blog.html"><span class = "fa fa-book fa-lg"></span> Tinklaraštis</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "aboutus.html"><span class = "fa fa-info-circle" fa-lg></span> Apie mus</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link active" href = "contactus.html"><span class = "fa fa-address-book fa-lg"></span> Kontaktai</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <h1>Programinės įrangos kūrimas</h1>
+                    <p>Kuriame įvairią programinę įrangą priklausomai nuo kliento pageidavimų! Dirbame su skirtingomis programavimo kalbomis atsižvelgus į projekto reikalavimus.</p>
+                </div>
+                <div class="col-12 col-sm align-self-center">
+                    <img src = "img/logo2.png" class = "img-fluid">
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Pagrindinis</a></li>
+                <li class="breadcrumb-item active">Kontaktai</li>
+            </ol>
+            <div class="col-12">
+               <h3>Kontaktai</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Vietos informacija</h3>
+           </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                   <h5>Adresas</h5>
+                    <address style="font-size: 100%">
+                      602, Saulėtekio al. 16,<br>
+                      Vilnius<br>
+                      <i class = "fa fa-phone fa-lg"></i> : +3706 7724763<br>
+                      <i class = "fa fa-envelope fa-lg"></i> : <a href="mailto:kanapka.rimvydas@gmail.com">kanapka.rimvydas@gmail.com</a>
+		           </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Mūsų vietovė žemėlapyje</h5>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class = "btn-group" role = "group">
+                    <a role = "button" class = "btn btn-success" href = "tel:+37067724763">
+                        <i class = "fa fa-phone"></i> Skambinti</a>
+                    <a role = "button" class = "btn btn-primary" href = "mailto:kanapka.rimvydas@gmail.com">
+                        <i class = "fa fa-envelope-o"></i> El. paštas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Parašykite mums!</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <form>
+                    <div class = "form-group row">
+                        <label for = "firstname" class = "col-md-2 col-form-label">Vardas</label>
+                        <div class = "col-md-10">
+                            <input type = "text" class = "form-control" id = "firstname" name = "firstname" placeholder = "Įveskite vardą ...">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "lastname" class = "col-md-2 col-form-label">Pavardė</label>
+                        <div class = "col-md-10">
+                            <input type = "text" class = "form-control" id = "lastname" name = "lastname" placeholder = "Įveskite pavardę ...">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "emailid" class = "col-2 col-form-label">El. paštas</label>
+                        <div class = "col-md-10">
+                            <input type = "email" class = "form-control" id = "email" name = "email" placeholder = "Įveskite el. pašto adresą ...">
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <label for = "feedback" class = "col-md-2 col-form-label">Jūsų žinutė</label>
+                        <div class = "col-md-10">
+                            <textarea class = "form-control" id = "feedback" name = "feedback" placeholder = "Įveskite žinutę ..." rows = "10"></textarea>
+                        </div>
+                    </div>
+                    <div class = "form-group row">
+                        <div  class = "offset-md-2 col-md-10">
+                            <button type = "submit" class = "btn btn-warning">Siųsti</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+             <div class="col-12 col-md">
+            </div>
+       </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Nuorodos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Pagrindinis</a></li>
+                        <li><a href="blog.html">Tinklaraštis</a></li>
+                        <li><a href="aboutus.html">Apie mus</a></li>
+                        <li><a href="#">Kontaktai</a></li>
+                    </ul>
+                </div>
+                <div class = "col-7 col-sm-5">
+                    <h5>Mūsų adresas</h5>
+                    <address class = "address">
+                      602, Saulėtekio al. 16,<br>
+                      Vilnius<br>
+                      <i class = "fa fa-phone fa-lg"></i> : +3706 7724763<br>
+                      <i class = "fa fa-envelope fa-lg"></i> : <a href="mailto:kanapka.rimvydas@gmail.com">kanapka.rimvydas@gmail.com</a>
+                   </address>
+                </div>
+                <div class = "col-12 col-sm-4 align-self-center">
+                    <div class = "text-center">
+                        <a class ="btn btn-social-icon btn-facebook" href="https://www.facebook.com/kanapka.rimvydas">
+                            <i class = "fa fa-facebook fa-lg"></i></a>
+                        <a class ="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/rimvydas-kanapka-261756182/">
+                            <i class = "fa fa-linkedin fa-lg"></i></a>
+                        <a class ="btn btn-social-icon btn-google" href="https://www.youtube.com/channel/UCLM6RvxK6sbu4Wm-3DAujBQ?view_as=subscriber">
+                            <i class = "fa fa-youtube fa-lg"></i></a>
+                        <a class ="btn btn-social-icon btn-github" href="https://github.com/RimveBiceps">
+                            <i class = "fa fa-github fa-lg"></i></a>
+                        <a class ="btn btn-social-icon btn-openid" href="https://stackoverflow.com/users/10023440/rimve">
+                            <i class = "fa fa-stack-overflow fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2020 Tech Sprendimai</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
