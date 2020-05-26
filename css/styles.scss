@@ -82,3 +82,16 @@ body{
 		width: 86px;
 	}
 }
+
+.modal {
+	.modal-header {
+		background: $background-dark;
+		color: floralwhite;
+		.close {
+			color: floralwhite;
+		}
+	}
+	.modal-body {
+		background: $background-pale;
+	}
+}

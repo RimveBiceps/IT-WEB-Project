@@ -38,7 +38,7 @@
                     </li>
                 </ul>
                 <span class = "navbar-text">
-                    <a data-toggle = "modal" data-target = "#loginModal"><span class = "fa fa-sign-in"></span> Prisijungimas</a>
+                    <a  id = "loginLink"><span class = "fa fa-sign-in"></span> Prisijungimas</a>
                 </span>
             </div>
         </div>
@@ -171,7 +171,7 @@
                     <img src = "img/logo5.png" class = "img-fluid" data-toggle = "tooltip" data-html = "true" title = "Kreipkitės į mus numeriu </br> <strong>+3706 7724763</strong>" data-placement = "bottom" href = "#new_project">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role = "button" class="btn btn-warning btn-sm" data-toggle = "modal" data-target = "#new_order_modal">Naujas užsakymas</a>
+                    <button class="btn btn-warning btn-sm"  id = "newOrder">Naujas užsakymas</button>
                 </div>
                 </div>
             </div>
@@ -344,6 +344,18 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
+            })
+        });
+    </script>
+    <script>
+        //JQUERY for opening login modal trough Prisijungimas link
+        $(document).ready(function() {
+            $('#loginLink').click(function() {
+                $('#loginModal').modal('show');
+            })
+        //JQUERY for opening New order modal trough Naujas uzsakymas button
+        $('#newOrder').click(function() {
+                $('#new_order_modal').modal('show');
             })
         });
     </script>

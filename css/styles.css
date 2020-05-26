@@ -57,3 +57,12 @@ body {
   height: 26%;
   top: 33%;
   width: 86px; }
+
+.modal .modal-header {
+  background: #463a3f;
+  color: floralwhite; }
+  .modal .modal-header .close {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background: #d7c9ce; }
