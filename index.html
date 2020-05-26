@@ -171,7 +171,7 @@
                     <img src = "img/logo5.png" class = "img-fluid" data-toggle = "tooltip" data-html = "true" title = "Kreipkitės į mus numeriu </br> <strong>+3706 7724763</strong>" data-placement = "bottom" href = "#new_project">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role = "button" class="btn btn-warning" data-toggle = "modal" data-target = "#new_order_modal">Naujas užsakymas</a>
+                    <a role = "button" class="btn btn-warning btn-sm" data-toggle = "modal" data-target = "#new_order_modal">Naujas užsakymas</a>
                 </div>
                 </div>
             </div>
@@ -179,7 +179,6 @@
     </header>
 
     <div class = "container">
-
         <div class = "row row-content">
             <div class = "col">
                 <div id = "my_carousel" class = "carousel slide" data-ride = "carousel">
@@ -208,18 +207,21 @@
                                 <p class = "d-none d-sm-block">Dirbsime tiek kiek prireiks, jog išpildytume visus jūsų lūkesčius.</p>
                             </div>
                         </div>
-                        <ol class = "carousel-indicators">
-                            <li data-target = "#my_carousel" data-slide-to = "0" class = "active"></li>
-                            <li data-target = "#my_carousel" data-slide-to = "1"></li>
-                            <li data-target = "#my_carousel" data-slide-to = "2"></li>
-                        </ol>
-                        <a class = "carousel-control-prev" href = "#my_carousel" role = "button" data-slide = "prev">
-                            <span class = "carousel-control-prev-icon"></span>
-                        </a>
-                        <a class = "carousel-control-next" href = "#my_carousel" role = "button" data-slide = "next">
-                            <span class = "carousel-control-next-icon"></span>
-                        </a>
                     </div>
+                    <ol class = "carousel-indicators">
+                        <li data-target = "#my_carousel" data-slide-to = "0" class = "active"></li>
+                        <li data-target = "#my_carousel" data-slide-to = "1"></li>
+                        <li data-target = "#my_carousel" data-slide-to = "2"></li>
+                    </ol>
+                    <a class = "carousel-control-prev" href = "#my_carousel" role = "button" data-slide = "prev">
+                        <span class = "carousel-control-prev-icon"></span>
+                    </a>
+                    <a class = "carousel-control-next" href = "#my_carousel" role = "button" data-slide = "next">
+                        <span class = "carousel-control-next-icon"></span>
+                    </a>
+                    <button class = "btn btn-light btn-sm" id = "carouselButton">
+                        <span class = "fa fa-pause"></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -320,10 +322,29 @@
     <script src = "node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src = "node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Message pops over then goes over Naujas uzsakymas -->
     <script>
+        // Message pops over then goes over IT Sprendimai logo -->
         $(document).ready(function() {
             $('[data-toggle = "tooltip"]').tooltip();
+        });
+    </script>
+    <script>
+        // JQuery code for carousel cycle interval and play/pause button.
+        $(document).ready(function() {
+            $('#my_carousel').carousel({ interval: 3000 });
+            $('#carouselButton').click(function() {
+                if ($('#carouselButton').children('span').hasClass('fa-pause')) {
+                    $('#my_carousel').carousel('pause');
+                    $('#carouselButton').children('span').removeClass('fa-pause');
+                    $('#carouselButton').children('span').addClass('fa-play');
+
+                }
+                else if ($("#carouselButton").children("span").hasClass('fa-play')){
+                    $("#my_carousel").carousel('cycle');
+                    $("#carouselButton").children("span").removeClass('fa-play');
+                    $("#carouselButton").children("span").addClass('fa-pause');                    
+                }
+            })
         });
     </script>
 </body>

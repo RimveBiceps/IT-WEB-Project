@@ -1,62 +1,59 @@
 .row-header {
-	margin: 0px auto;
-	padding: 0px auto;
-}
+  margin: 0px auto;
+  padding: 0px 0px; }
 
 .row-content {
-	margin: 0px auto;
-	padding: 50px 0px 50px 0px;
-	border-bottom: 1px ridge;
-	min-height: 300px;
-}
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 300px; }
 
 .footer {
-	background-color: #d7c9ce;
-	margin: 0px auto;
-	padding: 20px 0px 20px 0px;
-}
+  background-color: #d7c9ce;
+  margin: 0px auto;
+  padding: 20px 0px; }
 
 .jumbotron {
-	padding: 70px 30px 70px 30px;
-	margin: 0px auto;
-	background: #AF929D;
-	color: floralwhite;
-}
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #AF929D;
+  color: floralwhite; }
 
-.address {
-	font-size: 80%;
-	margin: 0px;
-	color: #0F111A;
-}
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0F111A; }
 
 body {
-	padding: 50px 0px 0px 0px;
-	z-index: 0;
-}
+  padding: 50px 0px 0px 0px;
+  z-index: 0; }
 
 .navbar-dark {
-	background-color: #463a3f;
-}
+  background-color: #463a3f; }
 
 .tab-content {
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	padding: 10px;
-}
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
 
 .carousel {
-	background: #d7c9ce;
-}
+  background: #d7c9ce; }
+  .carousel .carousel-item {
+    height: 200px; }
+    .carousel .carousel-item img {
+      position: absolute;
+      top: 22px;
+      left: 105px;
+      max-height: 150px; }
 
-.carousel-item {
-	height: 200px;
-}
+#carouselButton {
+  right: 28px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1; }
 
-.carousel-item img {
-	position: absolute;
-	top: 0;
-	left: 55px;
-	min-height: 200px;
-	max-height: 100px;
-}
+#my_carousel a {
+  height: 26%;
+  top: 33%;
+  width: 86px; }
